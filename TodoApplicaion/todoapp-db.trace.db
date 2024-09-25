@@ -1,0 +1,8 @@
+2024-08-29 17:19:54 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "create table tasks (\000d\000a    id integer primary key [*]autoincrement,\000d\000a    description varchar(100) not null,\000d\000a    done integer\000d\000a)"; oczekiwano "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"
+Syntax error in SQL statement "create table tasks (\000d\000a    id integer primary key [*]autoincrement,\000d\000a    description varchar(100) not null,\000d\000a    done integer\000d\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table tasks (
+    id integer primary key autoincrement,
+    description varchar(100) not null,
+    done integer
+) [42001-214]
